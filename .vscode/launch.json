@@ -1,0 +1,46 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "cmake",
+      "request": "launch",
+      "name": "CMake: 配置项目",
+      "cmakeDebugType": "configure",
+      "clean": false,
+      "configureAll": false
+    },
+    {
+      "type": "cmake",
+      "request": "launch",
+      "name": "CMake: 脚本调试",
+      "cmakeDebugType": "script",
+      "scriptPath": "${workspaceFolder}/<...>.cmake"
+    },
+    {
+      "type": "cmake",
+      "request": "launch",
+      "name": "CMake: 外部启动",
+      "cmakeDebugType": "external",
+      "pipeName": "<...>"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/Howard/Desktop/code",
+      "program": "c:/Users/Howard/Desktop/code/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
